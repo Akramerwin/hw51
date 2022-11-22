@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<a class="nav-link" href="{% url 'create' %}">Create</a>
+{% endblock %}
+{% block content %}
+    <h1><i class="bi bi-list-task"></i> Issue tracker</h1>
+    <br/>
+    <div>
+    {% for todoess in todo %}
+        <div class="row">
+  <div class="col-sm-3">
+    <div class="card border-success">
+      <div class="card-body text-success">
+        <h5 class="card-title">Title: {{ todoess.short_description }}</h5>
+        <p class="card-text">Status: {{ todoess.status }}</p>
+        <a href="{% url 'view' todoess.pk %}" class="btn btn-primary">Full view</a>
+      </div>
+    </div>
+  </div>
+</div>
+{#        <h2>Title: {{ todoess.short_description }}</h2>#}
+{#        <p>Status: {{ todoess.status }}</p>#}
+{#        <p><a href="{% url 'view' todoess.pk %}">More...</a></p>#}
+        <br/>
+    {% endfor %}
+    </div>
+{#    <p><a href="{% url 'create' %}">Добавить новую задачу</a></p>#}
+{% endblock %}

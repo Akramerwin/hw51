@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block nav %}
+<a class="nav-link" href="{% url "create" %}">Create!</a>
+<a class="nav-link" href="{% url "update" todo.pk %}">Update!</a>
+<a class="nav-link" href="{% url "delete" todo.pk %}">Delete!</a>
+{% endblock %}
+{% block content %}
+<br/>
+<div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-success">Task</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">Title: {{ todo.short_description }}</h5>
+    <p class="card-text">Description: {{ todo.description }}</p>
+    <p class="card-text">Status: {{ todo.status }}</p>
+    <p class="card-text">Type: {% for type in todo.type.all %}{{ type.type_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+    <p class="card-text">Date of create: {{ todo.date_of_create }}</p>
+    <p class="card-text">Date of update: {{ todo.date_of_update }}</P>  </div>
+  <div class="card-footer bg-transparent border-success"><p><a href="{% url 'index' %}" style="color: green; text-decoration: none">На главную</a></p>
+</div>
+</div>
+{% endblock %}
