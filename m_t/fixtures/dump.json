@@ -1,0 +1,170 @@
+[
+{
+  "model": "webapp.type",
+  "pk": 4,
+  "fields": {
+    "type_name": "Enhancement"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 5,
+  "fields": {
+    "type_name": "Bug"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 6,
+  "fields": {
+    "type_name": "Task"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "status_name": "New"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 4,
+  "fields": {
+    "status_name": "in_progress"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 5,
+  "fields": {
+    "status_name": "Done"
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 2,
+  "fields": {
+    "short_description": "Fix door",
+    "description": "In badroom!",
+    "status": 3,
+    "date_of_create": "2022-11-22T07:50:21.297Z",
+    "date_of_update": "2022-11-22T20:29:19.416Z",
+    "type": [
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 3,
+  "fields": {
+    "short_description": "Cooking",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    "status": 4,
+    "date_of_create": "2022-11-22T08:02:37.814Z",
+    "date_of_update": "2022-11-22T08:02:41.776Z",
+    "type": [
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 4,
+  "fields": {
+    "short_description": "Repair BMW",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If y",
+    "status": 5,
+    "date_of_create": "2022-11-22T08:02:55.376Z",
+    "date_of_update": "2022-11-22T20:29:06.904Z",
+    "type": [
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 5,
+  "fields": {
+    "short_description": "Do clean",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    "status": 4,
+    "date_of_create": "2022-11-22T08:03:16.707Z",
+    "date_of_update": "2022-11-22T08:03:16.707Z",
+    "type": [
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 6,
+  "fields": {
+    "short_description": "Go JIM",
+    "description": "l center 8:00",
+    "status": 3,
+    "date_of_create": "2022-11-22T08:04:25.824Z",
+    "date_of_update": "2022-11-22T08:04:25.824Z",
+    "type": [
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 7,
+  "fields": {
+    "short_description": "Buy clothes",
+    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+    "status": 3,
+    "date_of_create": "2022-11-22T08:05:12.124Z",
+    "date_of_update": "2022-11-22T08:05:12.124Z",
+    "type": [
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 8,
+  "fields": {
+    "short_description": "Wash hair",
+    "description": "At morning, in 9'clock, i will wash my hair",
+    "status": 3,
+    "date_of_create": "2022-11-22T20:11:02.367Z",
+    "date_of_update": "2022-11-22T20:11:02.367Z",
+    "type": [
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$vQnlE9WY7CSf8Epp4S7Olm$L9YmYBFnpbH6+P71BGY6Ds7tM3ltwx6H2CPEywfO+BU=",
+    "last_login": "2022-11-22T18:33:56.615Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-11-18T08:50:02.589Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
