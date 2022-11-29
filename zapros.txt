@@ -1,0 +1,14 @@
+from webapp.models import Type, Status, Todo
+
+1:
+from datetime import datetime, timedelta
+ 
+Todo.objects.filter(date_of_update__date__gt=datetime.now() - timedelta(days=30), status_id='5')
+
+2: 
+from django.db.models import Q
+Todo.objects.filter(Q (status__status_name = 'Done') | Q (status__status_name = 'New') & Q (type__type_name = 'Bug') | Q (type__type_name = 'Enhancement'))
+
+3:
+from django.db.models import Q
+Todo.objects.filter(Q(short_description__icontains='bug') | Q(type__type_name = 'Bug')).exclude(status__status_name='Done').distinct()
